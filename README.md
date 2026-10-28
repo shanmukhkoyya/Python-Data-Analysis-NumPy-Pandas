@@ -55,3 +55,11 @@ Open `python_data_analysis_numpy_pandas.ipynb` and run the cells from top to bot
 ## What I learned
 
 This exercise gave me practice with array operations, Series labels and positions, conditional filtering, grouping, and modifying a DataFrame. My next step is to apply these techniques to a larger dataset with a clear analysis question.
+
+## Limitations
+
+The values are small examples supplied for the assignment. They are useful for practising NumPy and Pandas operations but do not represent a real business dataset or support broad business conclusions. The amount currency is not specified in the assignment.
+
+## Author
+
+**Shanmukh Koyya** · [GitHub](https://github.com/shanmukhkoyya) · [LinkedIn](https://www.linkedin.com/in/shanmukh-koyya/) · [Email](mailto:shanmukhkoyya1234@gmail.com)
