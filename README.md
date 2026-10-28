@@ -1,35 +1,49 @@
 # Python Data Analysis with NumPy and Pandas
 
-This repository contains my work for **Python DA Assignment 1**. I used a small set of temperature values and a transaction table to practise the NumPy and Pandas operations covered in the assignment.
+This is my first Python data analysis assignment. I used two small examples—a set of daily temperatures and a transaction table—to practise the NumPy and Pandas operations I am learning.
 
-## What I worked on
+## What is in the notebook?
 
-### NumPy
-- Created one-dimensional and two-dimensional temperature arrays.
-- Checked array shape, data type, and number of elements.
-- Converted Celsius values to Fahrenheit and calculated minimum, maximum, and mean temperatures.
-- Selected values using array slicing.
+**NumPy — temperature readings**
+- Create 1D and 2D arrays and inspect their shape, type, and size.
+- Convert Celsius to Fahrenheit and calculate the minimum, maximum, and average.
+- Select days and weeks with array slicing.
 
-### Pandas Series
-- Created a Series with custom rank labels.
-- Used `.loc`, `.iloc`, and a Boolean condition to retrieve values.
-- Updated a mark, removed an entry, and divided the remaining marks by 10 for the assignment's CGPA exercise.
+**Pandas — student marks**
+- Work with a Series that uses rank labels.
+- Practise `.loc`, `.iloc`, Boolean filtering, updating a value, removing a label, and dividing marks by 10 for the assignment's CGPA exercise.
 
-### Pandas DataFrame
-- Explored rows, columns, shape, and data types.
-- Selected columns and filtered transactions using conditions.
-- Counted product categories, listed unique regions, and calculated average transaction amounts by region.
-- Updated TransactionID 102, calculated a temporary 10% Discount column, removed TransactionID 109, and deleted the Discount column as required.
+**Pandas — transaction table**
+- Inspect the table and select columns.
+- Filter transactions, count product categories, find unique regions, and calculate mean amount by region.
+- Apply the requested edits: update TransactionID 102, calculate a temporary discount, remove TransactionID 109, and remove the discount column.
 
-## Files
+## A few results
 
-- **`python_data_analysis_numpy_pandas.ipynb`** — notebook with the code and saved outputs.
-- **`Python DA Assignment 1 - Data Analysis using NumPy and Pandas.pdf`** — assignment brief used for this exercise.
-- **`requirements.txt`** — Python packages needed to run the notebook.
+These results come from the original transaction table, before the modification exercise.
 
-## Run it locally
+| Check | Result |
+|---|---|
+| Week 1 average temperature | 23.54°C (approximately) |
+| Week 1 temperature range | 20.8°C to 26.1°C |
+| Electronics transactions | 4 |
+| Clothing transactions | 3 |
+| Furniture transactions | 3 |
+| Highest regional mean amount | East — 375 |
+| Lowest regional mean amount | West — 190 |
 
-Use Python 3, then install the packages:
+The sample is small, so these are checks of the assignment data—not evidence of wider business trends. The amount's currency is not specified.
+
+## Project files
+
+- [Jupyter notebook](python_data_analysis_numpy_pandas.ipynb) — code and saved outputs.
+- [Project report](PROJECT_REPORT.md) — method, results, final table state, and limitations.
+- [Requirements](requirements.txt) — packages used by the notebook.
+- [Original assignment PDF](Python%20DA%20Assignment%201%20-%20Data%20Analysis%20using%20NumPy%20and%20Pandas.pdf) — task instructions.
+
+## Run it on your computer
+
+From the project folder, run:
 
 ```bash
 python -m pip install -r requirements.txt
@@ -38,32 +52,6 @@ jupyter notebook
 
 Open `python_data_analysis_numpy_pandas.ipynb` and run the cells from top to bottom.
 
-## Final checks
+## What I learned
 
-The notebook finishes by checking that the NumPy arrays have shapes `(7,)` and `(2, 7)`, the updated marks Series contains Rank1 through Rank4, and the final transaction table has 9 rows and 4 columns.
-
-This is a learning assignment with small, explicitly defined examples; the goal is to show the operations and their results clearly.
-
-## A few results from the notebook
-
-- Week 1's average temperature is about **23.54°C**; the lowest value is **20.8°C** and the highest is **26.1°C**.
-- The original transaction table contains 4 Electronics, 3 Clothing, and 3 Furniture records.
-- Before the data-modification exercise, the average transaction amount by region is East **375**, North **287.5**, South **250**, and West **190**.
-- The final table contains **9 rows and 4 columns**. The discount is calculated and then removed because that is the sequence required by the assignment.
-
-The regional averages above are calculated before TransactionID 102 is changed from 150 to 165, matching the notebook's order of work.
-
-## Project files
-
-| File | Purpose |
-|---|---|
-| [Notebook](python_data_analysis_numpy_pandas.ipynb) | Code, outputs, and step-by-step exercises |
-| [Project report](PROJECT_REPORT.md) | Findings, final data state, and limitations |
-| [Requirements](requirements.txt) | Packages needed to run the notebook |
-| [Assignment brief](Python%20DA%20Assignment%201%20-%20Data%20Analysis%20using%20NumPy%20and%20Pandas.pdf) | Original task instructions |
-
-## Scope and limitations
-
-The values in this repository are small examples from the assignment, not a production dataset. The regional averages and category counts describe only those supplied records. The amount's currency is not specified, and the project does not calculate profit.
-
-For a fuller account of the work and the exact sequence of changes, see [PROJECT_REPORT.md](PROJECT_REPORT.md).
+This exercise gave me practice with array operations, Series labels and positions, conditional filtering, grouping, and modifying a DataFrame. My next step is to apply these techniques to a larger dataset with a clear analysis question.
