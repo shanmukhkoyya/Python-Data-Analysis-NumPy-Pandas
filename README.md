@@ -43,3 +43,12 @@ Open `python_data_analysis_numpy_pandas.ipynb` and run the cells from top to bot
 The notebook finishes by checking that the NumPy arrays have shapes `(7,)` and `(2, 7)`, the updated marks Series contains Rank1 through Rank4, and the final transaction table has 9 rows and 4 columns.
 
 This is a learning assignment with small, explicitly defined examples; the goal is to show the operations and their results clearly.
+
+## A few results from the notebook
+
+- Week 1's average temperature is about **23.54°C**; the lowest value is **20.8°C** and the highest is **26.1°C**.
+- The original transaction table contains 4 Electronics, 3 Clothing, and 3 Furniture records.
+- Before the data-modification exercise, the average transaction amount by region is East **375**, North **287.5**, South **250**, and West **190**.
+- The final table contains **9 rows and 4 columns**. The discount is calculated and then removed because that is the sequence required by the assignment.
+
+The regional averages above are calculated before TransactionID 102 is changed from 150 to 165, matching the notebook's order of work.
