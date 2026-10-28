@@ -52,3 +52,18 @@ This is a learning assignment with small, explicitly defined examples; the goal 
 - The final table contains **9 rows and 4 columns**. The discount is calculated and then removed because that is the sequence required by the assignment.
 
 The regional averages above are calculated before TransactionID 102 is changed from 150 to 165, matching the notebook's order of work.
+
+## Project files
+
+| File | Purpose |
+|---|---|
+| [Notebook](python_data_analysis_numpy_pandas.ipynb) | Code, outputs, and step-by-step exercises |
+| [Project report](PROJECT_REPORT.md) | Findings, final data state, and limitations |
+| [Requirements](requirements.txt) | Packages needed to run the notebook |
+| [Assignment brief](Python%20DA%20Assignment%201%20-%20Data%20Analysis%20using%20NumPy%20and%20Pandas.pdf) | Original task instructions |
+
+## Scope and limitations
+
+The values in this repository are small examples from the assignment, not a production dataset. The regional averages and category counts describe only those supplied records. The amount's currency is not specified, and the project does not calculate profit.
+
+For a fuller account of the work and the exact sequence of changes, see [PROJECT_REPORT.md](PROJECT_REPORT.md).
