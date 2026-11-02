@@ -27,9 +27,8 @@ Regional means         East 375 | North 287.5
 | Final table | — | 9 rows × 4 columns |
 
 ## Open the lab
-- [Jupyter notebook](Python_Data_Analysis_NumPy_Pandas.ipynb)
+- [Jupyter notebook](python_data_analysis_numpy_pandas.ipynb)
 - [Written project report](PROJECT_REPORT.md)
-- [PDF report](Python_Data_Analysis_NumPy_Pandas.pdf)
-- [Dependencies](requirements.txt)
+- [PDF report](Python%20DA%20Assignment%201%20-%20Data%20Analysis%20using%20NumPy%20and%20Pandas.pdf)
 
 <sub>Small practice dataset; not a market benchmark. Restart the kernel and run all notebook cells to reproduce the outputs.</sub>
