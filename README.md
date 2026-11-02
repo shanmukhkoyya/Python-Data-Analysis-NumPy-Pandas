@@ -1,65 +1,56 @@
-# Python Data Analysis with NumPy and Pandas
+# NumPy & Pandas — Practical Data Lab
 
-This is my first Python data analysis assignment. I used two small examples—a set of daily temperatures and a transaction table—to practise the NumPy and Pandas operations I am learning.
+**Notebook:** python_data_analysis_numpy_pandas.ipynb  
+**Level:** Introductory Python data analysis  
+**Focus:** Array operations, labelled data, filtering and grouped summaries
 
-## What is in the notebook?
+## Lab map
 
-**NumPy — temperature readings**
-- Create 1D and 2D arrays and inspect their shape, type, and size.
-- Convert Celsius to Fahrenheit and calculate the minimum, maximum, and average.
-- Select days and weeks with array slicing.
+| Exercise | Data used | Practice |
+|---|---|---|
+| NumPy arrays | Daily temperature readings | 1D/2D arrays, shape, type, size, slicing and Celsius-to-Fahrenheit conversion |
+| Pandas Series | Student marks | Labels vs positions, .loc, .iloc, Boolean filtering and a CGPA exercise |
+| Pandas DataFrame | Small transaction table | Column selection, filtering, category counts, unique regions and regional mean amount |
 
-**Pandas — student marks**
-- Work with a Series that uses rank labels.
-- Practise `.loc`, `.iloc`, Boolean filtering, updating a value, removing a label, and dividing marks by 10 for the assignment's CGPA exercise.
+The transaction exercise also updates TransactionID 102, calculates a temporary discount, removes TransactionID 109, and then removes the discount column.
 
-**Pandas — transaction table**
-- Inspect the table and select columns.
-- Filter transactions, count product categories, find unique regions, and calculate mean amount by region.
-- Apply the requested edits: update TransactionID 102, calculate a temporary discount, remove TransactionID 109, and remove the discount column.
+## Selected checks from the original examples
 
-## A few results
-
-These results come from the original transaction table, before the modification exercise.
+These values refer to the original transaction table before the modification exercise.
 
 | Check | Result |
-|---|---|
-| Week 1 average temperature | 23.54°C (approximately) |
-| Week 1 temperature range | 20.8°C to 26.1°C |
+|---|---:|
+| Week 1 average temperature | 23.54°C |
+| Week 1 temperature range | 20.8°C–26.1°C |
 | Electronics transactions | 4 |
 | Clothing transactions | 3 |
 | Furniture transactions | 3 |
 | Highest regional mean amount | East — 375 |
 | Lowest regional mean amount | West — 190 |
 
-The sample is small, so these are checks of the assignment data—not evidence of wider business trends. The amount's currency is not specified.
+The examples are small assignment datasets. They are practice checks, not evidence of wider business trends. The currency for transaction amounts is not specified.
 
-## Project files
+## Files in this repository
 
-- [Jupyter notebook](python_data_analysis_numpy_pandas.ipynb) — code and saved outputs.
-- [Project report](PROJECT_REPORT.md) — method, results, final table state, and limitations.
-- [Requirements](requirements.txt) — packages used by the notebook.
-- [Original assignment PDF](Python%20DA%20Assignment%201%20-%20Data%20Analysis%20using%20NumPy%20and%20Pandas.pdf) — task instructions.
+- [Notebook](python_data_analysis_numpy_pandas.ipynb) — code and saved outputs.
+- [Project report](PROJECT_REPORT.md) — method, results, final table state and limitations.
+- [Requirements](requirements.txt) — Python package list used by the notebook.
+- [Assignment PDF](Python%20DA%20Assignment%201%20-%20Data%20Analysis%20using%20NumPy%20and%20Pandas.pdf) — original task instructions.
 
-## Run it on your computer
+## Reproduce the lab
 
-From the project folder, run:
+Install packages listed in requirements.txt, start Jupyter Notebook, open python_data_analysis_numpy_pandas.ipynb and run the cells from top to bottom.
 
-```bash
-python -m pip install -r requirements.txt
-jupyter notebook
-```
+## Skills practised
 
-Open `python_data_analysis_numpy_pandas.ipynb` and run the cells from top to bottom.
+**NumPy:** array construction, inspection, conversion, aggregation and slicing.
 
-## What I learned
+**Pandas:** Series labels, index-based access, Boolean masks, DataFrame selection, row updates, row removal, category counts, unique values and group means.
 
-This exercise gave me practice with array operations, Series labels and positions, conditional filtering, grouping, and modifying a DataFrame. My next step is to apply these techniques to a larger dataset with a clear analysis question.
+## Reflection
 
-## Limitations
+The main learning point is the difference between a label and a position in a Pandas Series, and how the same table can be explored through column selection, filters and grouped calculations. The next step after these small exercises is to apply the same operations to a larger dataset with a defined analysis question.
 
-The values are small examples supplied for the assignment. They are useful for practising NumPy and Pandas operations but do not represent a real business dataset or support broad business conclusions. The amount currency is not specified in the assignment.
+---
 
-## Author
-
-**Shanmukh Koyya** · [GitHub](https://github.com/shanmukhkoyya) · [LinkedIn](https://www.linkedin.com/in/shanmukh-koyya/) · [Email](mailto:shanmukhkoyya1234@gmail.com)
+[GitHub profile](https://github.com/shanmukhkoyya) · [LinkedIn](https://www.linkedin.com/in/shanmukh-koyya/) · [Email](mailto:shanmukhkoyya1234@gmail.com)
